@@ -270,6 +270,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="G-Face.ico" />
+    <None Include="sound\hp_sound.wav" />
+    <None Include="sound\over_sound.wav" />
+    <None Include="sound\shoot_sound.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

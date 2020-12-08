@@ -226,4 +226,13 @@
   <data name="restart_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\restart_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="shoot_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sound\shoot_sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="over_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sound\over_sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hp_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sound\hp_sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

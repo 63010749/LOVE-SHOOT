@@ -15,7 +15,7 @@ namespace LOVE_SHOOT
         bool goLeft, goRight, goUp, goDown, gameOver;
         string facing = "up";
         int playerHealth = 100;
-        int speed =40;
+        int speed = 30;
         int ammo = 10;
         int zombieSpeed = 4;
         Random randNum = new Random();
@@ -167,13 +167,19 @@ namespace LOVE_SHOOT
                 {
                     if (player.Bounds.IntersectsWith(x.Bounds))
                     {
+                        System.Media.SoundPlayer sound = new System.Media.SoundPlayer(@"C:\Users\Tang\Desktop\program_fun\LOVE SHOOT\LOVE SHOOT\sound\hp_sound.wav");
+                        sound.Play();
                         this.Controls.Remove(x);
                         ((PictureBox)x).Dispose();
                         if (playerHealth < 90)
                         {
                             playerHealth += 10;
                         }
-
+                        else if (playerHealth >= 90 && playerHealth <100)
+                        {
+                            int prehealth = 100 - playerHealth;
+                            playerHealth += prehealth;
+                        }
                     }
                 }
 
@@ -246,6 +252,8 @@ namespace LOVE_SHOOT
             {
                 ammo--;
                 ShootBullet(facing);
+                System.Media.SoundPlayer sound = new System.Media.SoundPlayer(@"C:\Users\Tang\Desktop\program_fun\LOVE SHOOT\LOVE SHOOT\sound\shoot_sound.wav");
+                sound.Play();
 
                 if (ammo < 1)
                 {

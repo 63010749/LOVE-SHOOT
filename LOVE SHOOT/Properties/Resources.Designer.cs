@@ -229,6 +229,15 @@ namespace LOVE_SHOOT.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream hp_sound {
+            get {
+                return ResourceManager.GetStream("hp_sound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Left1 {
@@ -255,6 +264,15 @@ namespace LOVE_SHOOT.Properties {
             get {
                 object obj = ResourceManager.GetObject("option_normal1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream over_sound {
+            get {
+                return ResourceManager.GetStream("over_sound", resourceCulture);
             }
         }
         
@@ -305,6 +323,15 @@ namespace LOVE_SHOOT.Properties {
             get {
                 object obj = ResourceManager.GetObject("right1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream shoot_sound {
+            get {
+                return ResourceManager.GetStream("shoot_sound", resourceCulture);
             }
         }
         

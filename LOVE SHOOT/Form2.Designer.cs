@@ -50,10 +50,9 @@
             // 
             // healthBar
             // 
-            this.healthBar.Location = new System.Drawing.Point(819, 46);
-            this.healthBar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.healthBar.Location = new System.Drawing.Point(546, 30);
             this.healthBar.Name = "healthBar";
-            this.healthBar.Size = new System.Drawing.Size(532, 45);
+            this.healthBar.Size = new System.Drawing.Size(355, 29);
             this.healthBar.TabIndex = 3;
             this.healthBar.Value = 100;
             // 
@@ -63,10 +62,9 @@
             this.txtAmmo.BackColor = System.Drawing.Color.Transparent;
             this.txtAmmo.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmmo.ForeColor = System.Drawing.Color.White;
-            this.txtAmmo.Location = new System.Drawing.Point(117, 51);
-            this.txtAmmo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txtAmmo.Location = new System.Drawing.Point(78, 33);
             this.txtAmmo.Name = "txtAmmo";
-            this.txtAmmo.Size = new System.Drawing.Size(51, 30);
+            this.txtAmmo.Size = new System.Drawing.Size(33, 20);
             this.txtAmmo.TabIndex = 5;
             this.txtAmmo.Text = "10";
             // 
@@ -76,10 +74,9 @@
             this.txtScore.BackColor = System.Drawing.Color.Transparent;
             this.txtScore.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtScore.ForeColor = System.Drawing.Color.White;
-            this.txtScore.Location = new System.Drawing.Point(303, 51);
-            this.txtScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txtScore.Location = new System.Drawing.Point(202, 33);
             this.txtScore.Name = "txtScore";
-            this.txtScore.Size = new System.Drawing.Size(32, 30);
+            this.txtScore.Size = new System.Drawing.Size(21, 20);
             this.txtScore.TabIndex = 6;
             this.txtScore.Text = "0";
             // 
@@ -87,8 +84,7 @@
             // 
             this.player.BackColor = System.Drawing.Color.Transparent;
             this.player.Image = global::LOVE_SHOOT.Properties.Resources.up1;
-            this.player.Location = new System.Drawing.Point(639, 802);
-            this.player.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.player.Location = new System.Drawing.Point(426, 521);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(71, 100);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -99,8 +95,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::LOVE_SHOOT.Properties.Resources.B_Face1;
-            this.pictureBox3.Location = new System.Drawing.Point(728, 26);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox3.Location = new System.Drawing.Point(485, 17);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(50, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -111,8 +106,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::LOVE_SHOOT.Properties.Resources.G_Face;
-            this.pictureBox2.Location = new System.Drawing.Point(219, 26);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(146, 17);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -123,8 +117,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::LOVE_SHOOT.Properties.Resources.Ammo_Image1;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 26);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(22, 17);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -137,10 +130,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(18, 972);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(12, 632);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(241, 30);
+            this.label3.Size = new System.Drawing.Size(153, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "High-Score :";
             // 
@@ -150,10 +142,9 @@
             this.lbl_value.BackColor = System.Drawing.Color.Transparent;
             this.lbl_value.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_value.ForeColor = System.Drawing.Color.White;
-            this.lbl_value.Location = new System.Drawing.Point(256, 972);
-            this.lbl_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_value.Location = new System.Drawing.Point(171, 632);
             this.lbl_value.Name = "lbl_value";
-            this.lbl_value.Size = new System.Drawing.Size(35, 35);
+            this.lbl_value.Size = new System.Drawing.Size(24, 23);
             this.lbl_value.TabIndex = 8;
             this.lbl_value.Text = "0";
             // 
@@ -166,7 +157,6 @@
             // 
             this.axWindowsMediaPlayer1.Enabled = true;
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(335, 30);
-            this.axWindowsMediaPlayer1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(75, 23);
@@ -174,10 +164,10 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LOVE_SHOOT.Properties.Resources.BG;
-            this.ClientSize = new System.Drawing.Size(1377, 991);
+            this.ClientSize = new System.Drawing.Size(922, 655);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.lbl_value);
             this.Controls.Add(this.label3);
@@ -189,8 +179,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MaximumSize = new System.Drawing.Size(1399, 1047);
+            this.MaximumSize = new System.Drawing.Size(938, 694);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOVE SHOOT";

@@ -15,7 +15,12 @@ namespace LOVE_SHOOT
         public over()
         {
             InitializeComponent();
+            wplayer.URL = (@"C:\Users\Tang\Desktop\program_fun\LOVE SHOOT\LOVE SHOOT\sound\over_sound.wav");
+            wplayer.controls.play();
+            axWindowsMediaPlayer1.Hide();
         }
+
+        public static WMPLib.WindowsMediaPlayer wplayer = new WMPLib.WindowsMediaPlayer();
 
         private void pictureBox2_MouseHover(object sender, EventArgs e)
         {
