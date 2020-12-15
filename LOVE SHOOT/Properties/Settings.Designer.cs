@@ -25,13 +25,121 @@ namespace LOVE_SHOOT.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public string h_score {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Name1 {
             get {
-                return ((string)(this["h_score"]));
+                return ((string)(this["Name1"]));
             }
             set {
-                this["h_score"] = value;
+                this["Name1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Name2 {
+            get {
+                return ((string)(this["Name2"]));
+            }
+            set {
+                this["Name2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Name3 {
+            get {
+                return ((string)(this["Name3"]));
+            }
+            set {
+                this["Name3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Name4 {
+            get {
+                return ((string)(this["Name4"]));
+            }
+            set {
+                this["Name4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Name5 {
+            get {
+                return ((string)(this["Name5"]));
+            }
+            set {
+                this["Name5"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Score1 {
+            get {
+                return ((string)(this["Score1"]));
+            }
+            set {
+                this["Score1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Score2 {
+            get {
+                return ((string)(this["Score2"]));
+            }
+            set {
+                this["Score2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Score3 {
+            get {
+                return ((string)(this["Score3"]));
+            }
+            set {
+                this["Score3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Score4 {
+            get {
+                return ((string)(this["Score4"]));
+            }
+            set {
+                this["Score4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Score5 {
+            get {
+                return ((string)(this["Score5"]));
+            }
+            set {
+                this["Score5"] = value;
             }
         }
     }

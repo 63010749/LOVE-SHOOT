@@ -33,17 +33,19 @@
             this.btn_option = new System.Windows.Forms.PictureBox();
             this.btn_exit = new System.Windows.Forms.PictureBox();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_start)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_option)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_start
             // 
             this.btn_start.Image = global::LOVE_SHOOT.Properties.Resources.start_normal1;
             this.btn_start.Location = new System.Drawing.Point(372, 223);
-            this.btn_start.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_start.Margin = new System.Windows.Forms.Padding(2);
             this.btn_start.Name = "btn_start";
             this.btn_start.Size = new System.Drawing.Size(216, 58);
             this.btn_start.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -57,7 +59,7 @@
             // 
             this.btn_option.Image = global::LOVE_SHOOT.Properties.Resources.option_normal1;
             this.btn_option.Location = new System.Drawing.Point(372, 297);
-            this.btn_option.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_option.Margin = new System.Windows.Forms.Padding(2);
             this.btn_option.Name = "btn_option";
             this.btn_option.Size = new System.Drawing.Size(216, 58);
             this.btn_option.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -71,7 +73,7 @@
             // 
             this.btn_exit.Image = global::LOVE_SHOOT.Properties.Resources.exit_normal1;
             this.btn_exit.Location = new System.Drawing.Point(372, 371);
-            this.btn_exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_exit.Margin = new System.Windows.Forms.Padding(2);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(216, 58);
             this.btn_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -90,19 +92,32 @@
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(75, 23);
             this.axWindowsMediaPlayer1.TabIndex = 3;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::LOVE_SHOOT.Properties.Resources.high;
+            this.pictureBox1.Location = new System.Drawing.Point(782, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(128, 29);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 50;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LOVE_SHOOT.Properties.Resources.Start1;
-            this.ClientSize = new System.Drawing.Size(924, 661);
+            this.ClientSize = new System.Drawing.Size(922, 655);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_option);
             this.Controls.Add(this.btn_start);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MaximumSize = new System.Drawing.Size(940, 700);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(938, 694);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOVE SHOOT";
@@ -112,6 +127,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_option)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,6 +139,7 @@
         private System.Windows.Forms.PictureBox btn_option;
         private System.Windows.Forms.PictureBox btn_exit;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

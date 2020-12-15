@@ -12,6 +12,12 @@ namespace LOVE_SHOOT
 {
     public partial class Form2 : Form
     {
+        int NewScore;
+        int[] Swap = new int[5];
+
+        string NewName;
+        string[] Swap1 = new string[5];
+
         bool goLeft, goRight, goUp, goDown, gameOver;
         string facing = "up";
         int playerHealth = 100;
@@ -32,7 +38,9 @@ namespace LOVE_SHOOT
             wplayer.URL = (@"C:\Users\Tang\Desktop\program_fun\LOVE SHOOT\LOVE SHOOT\Resources\background_sound.wav");
             wplayer.controls.play();
             axWindowsMediaPlayer1.Hide();
-            lbl_value.Text = Properties.Settings.Default.h_score;
+            panel1.Hide();
+            panel2.Hide();
+           
             RestartGame();
         }
         public static WMPLib.WindowsMediaPlayer wplayer = new WMPLib.WindowsMediaPlayer();
@@ -53,27 +61,22 @@ namespace LOVE_SHOOT
                 {
                     pictureBox3.Image = Properties.Resources.B_Face1;
                 }
+
+                
             }
 
             else
             {
+               
+                panel1.Show();
                 gameOver = true;
                 wplayer.controls.stop();
                 player.Image = Properties.Resources.Dead;
                 GameTimer.Stop();
-
-                int a = Int32.Parse(lbl_value.Text);
-
-                if (score > a)
-                {
-                    lbl_value.Text = score.ToString();
-                    Properties.Settings.Default.h_score = lbl_value.Text;
-                    Properties.Settings.Default.Save();
-                }
-
-                over option = new over();
-                option.Show();
-                Visible = false;
+                
+                
+               
+                
             }
 
             txtAmmo.Text = " " + ammo;
@@ -262,6 +265,7 @@ namespace LOVE_SHOOT
 
             }
         }
+
         private void ShootBullet(string direction)
         {
             Bullet shootBullet = new Bullet();
@@ -279,6 +283,7 @@ namespace LOVE_SHOOT
 
         }
 
+        
         private void Form2_Load(object sender, EventArgs e)
         {
             MaximizeBox = false;
@@ -291,6 +296,131 @@ namespace LOVE_SHOOT
             MaximizeBox = false;
             MinimizeBox = false;
             ControlBox = false;
+            Score1.Text = Convert.ToString(Properties.Settings.Default.Score1);
+            Score2.Text = Convert.ToString(Properties.Settings.Default.Score2);
+            Score3.Text = Convert.ToString(Properties.Settings.Default.Score3);
+            Score4.Text = Convert.ToString(Properties.Settings.Default.Score4);
+            Score5.Text = Convert.ToString(Properties.Settings.Default.Score5);
+
+            Name1.Text = Convert.ToString(Properties.Settings.Default.Name1);
+            Name2.Text = Convert.ToString(Properties.Settings.Default.Name2);
+            Name3.Text = Convert.ToString(Properties.Settings.Default.Name3);
+            Name4.Text = Convert.ToString(Properties.Settings.Default.Name4);
+            Name5.Text = Convert.ToString(Properties.Settings.Default.Name5);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            try
+            {
+                NewScore = score;
+                NewName = textBox1.Text;
+
+
+                if (NewScore > Convert.ToInt32(Score1.Text)) //If NewScore Is Higher Than #1
+                {
+                    Swap1[1] = Convert.ToString(Name1.Text);      //Swap[1] = Old Score1.Text
+                    Name1.Text = Convert.ToString(NewName);    //Score1.Text = NewScore
+                    Swap1[2] = Convert.ToString(Name2.Text);  //Swap[2] Old Score2.Text
+                    Name2.Text = Convert.ToString(Swap1[1]); //Score2.Text = Prev Score1.Text
+                    Swap1[3] = Convert.ToString(Name3.Text);  //Swap[3] = Old Score3.Text
+                    Name3.Text = Convert.ToString(Swap1[2]); //score3.Text = Prev Score2.Text
+                    Swap1[4] = Convert.ToString(Name4.Text);  //Swap[4] = Old Score4.Text
+                    Name4.Text = Convert.ToString(Swap1[3]); //Score4.Text = Prev Score3.Text
+                    Name5.Text = Convert.ToString(Swap1[4]); //Score5.Text = Prev Score4.Text
+
+                    Swap[1] = Convert.ToInt32(Score1.Text);      //Swap[1] = Old Score1.Text
+                    Score1.Text = Convert.ToString(NewScore);    //Score1.Text = NewScore
+                    Swap[2] = Convert.ToInt32(Score2.Text);  //Swap[2] Old Score2.Text
+                    Score2.Text = Convert.ToString(Swap[1]); //Score2.Text = Prev Score1.Text
+                    Swap[3] = Convert.ToInt32(Score3.Text);  //Swap[3] = Old Score3.Text
+                    Score3.Text = Convert.ToString(Swap[2]); //score3.Text = Prev Score2.Text
+                    Swap[4] = Convert.ToInt32(Score4.Text);  //Swap[4] = Old Score4.Text
+                    Score4.Text = Convert.ToString(Swap[3]); //Score4.Text = Prev Score3.Text
+                    Score5.Text = Convert.ToString(Swap[4]); //Score5.Text = Prev Score4.Text
+                }
+                else
+
+                    if (NewScore > Convert.ToInt32(Score2.Text)) //If NewScore Is Higher Than #2
+                {
+                    Swap1[1] = Convert.ToString(Name2.Text);   //Swap[1] = Old Score2.Text
+                    Name2.Text = Convert.ToString(NewName); //Score2.Text = NewScore
+                    Swap1[2] = Convert.ToString(Name3.Text);   //Swap[2] = Old Score3.Text
+                    Name3.Text = Convert.ToString(Swap1[1]);  //score3.Text = Old Score2.Text
+                    Swap1[3] = Convert.ToString(Name4.Text);  //Swap[3] = Old Score4.Text
+                    Name4.Text = Convert.ToString(Swap1[2]);  //Score4.Text = Old Score3.Text
+                    Name5.Text = Convert.ToString(Swap1[3]);  //Score5.Text = Old Score4.Text
+
+                    Swap[1] = Convert.ToInt32(Score2.Text);   //Swap[1] = Old Score2.Text
+                    Score2.Text = Convert.ToString(NewScore); //Score2.Text = NewScore
+                    Swap[2] = Convert.ToInt32(Score3.Text);   //Swap[2] = Old Score3.Text
+                    Score3.Text = Convert.ToString(Swap[1]);  //score3.Text = Old Score2.Text
+                    Swap[3] = Convert.ToInt32(Score4.Text);  //Swap[3] = Old Score4.Text
+                    Score4.Text = Convert.ToString(Swap[2]);  //Score4.Text = Old Score3.Text
+                    Score5.Text = Convert.ToString(Swap[3]);  //Score5.Text = Old Score4.Text
+
+
+                }
+                else
+                        if (NewScore > Convert.ToInt32(Score3.Text)) //If NewScore Is Higher Than #3
+                {
+                    Swap1[1] = Convert.ToString(Name3.Text);   //Swap[1] = Old Score3.Text
+                    Name3.Text = Convert.ToString(NewName); //Score3.Text = NewScore
+                    Swap1[2] = Convert.ToString(Name4.Text);   //Swap[2] = Old Score4.Text
+                    Name4.Text = Convert.ToString(Swap1[1]);  //Score4.Text = Old Score3.Text
+                    Name5.Text = Convert.ToString(Swap1[2]);  //Score5.Text = Old Score4.Text
+
+                    Swap[1] = Convert.ToInt32(Score3.Text);   //Swap[1] = Old Score3.Text
+                    Score3.Text = Convert.ToString(NewScore); //Score3.Text = NewScore
+                    Swap[2] = Convert.ToInt32(Score4.Text);   //Swap[2] = Old Score4.Text
+                    Score4.Text = Convert.ToString(Swap[1]);  //Score4.Text = Old Score3.Text
+                    Score5.Text = Convert.ToString(Swap[2]);  //Score5.Text = Old Score4.Text
+                }
+                else
+                            if (NewScore > Convert.ToInt32(Score4.Text)) //If NewScore Is Higher Than #4
+                {
+                    Swap1[1] = Convert.ToString(Name4.Text);   //Swap[1] = Old Score4.Text
+                    Name4.Text = Convert.ToString(NewName); //Score4.Text = NewScore
+                    Name5.Text = Convert.ToString(Swap1[1]);  //Score5.Text = Prev Score4.Text
+
+                    Swap[1] = Convert.ToInt32(Score4.Text);   //Swap[1] = Old Score4.Text
+                    Score4.Text = Convert.ToString(NewScore); //Score4.Text = NewScore
+                    Score5.Text = Convert.ToString(Swap[1]);  //Score5.Text = Prev Score4.Text
+                }
+                else
+                                if (NewScore > Convert.ToInt32(Score5.Text)) //If NewScore Is Higher Than #5
+                {
+                    Swap1[1] = Convert.ToString(Name5.Text);
+                    Name5.Text = Convert.ToString(NewName); //Score5.Text = NewScore
+
+                    Swap[1] = Convert.ToInt32(Score5.Text);
+                    Score5.Text = Convert.ToString(NewScore); //Score5.Text = NewScore
+                }
+
+                //Saves The HighScores
+                Properties.Settings.Default.Score1 = Score1.Text;
+                Properties.Settings.Default.Score2 = Score2.Text;
+                Properties.Settings.Default.Score3 = Score3.Text;
+                Properties.Settings.Default.Score4 = Score4.Text;
+                Properties.Settings.Default.Score5 = Score5.Text;
+
+                Properties.Settings.Default.Name1 = Name1.Text;
+                Properties.Settings.Default.Name2 = Name2.Text;
+                Properties.Settings.Default.Name3 = Name3.Text;
+                Properties.Settings.Default.Name4 = Name4.Text;
+                Properties.Settings.Default.Name5 = Name5.Text;
+
+                Properties.Settings.Default.Save();
+            }
+            catch (Exception ex)
+            {
+            }
+
+            over option = new over();
+            option.Show();
+            Visible = false;
+
         }
 
         private void MakeZombies()

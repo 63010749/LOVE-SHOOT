@@ -84,5 +84,12 @@ namespace LOVE_SHOOT
             MinimizeBox = false;
             ControlBox = false;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            highscoreList option = new highscoreList();
+            option.Show();
+            Visible = false;
+        }
     }
 }

@@ -145,17 +145,29 @@
   <data name="option_hover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\option_hover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="backtomenu_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backtomenu_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="zdown1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zdown1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="zright1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zright1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="quit_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quit_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="B-Face1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\B-Face1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="backtomenu_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backtomenu_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Dead" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dead.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quit_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quit_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="G-Face" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\G-Face.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,8 +175,14 @@
   <data name="background_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background_sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="restart_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restart_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="button_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button_sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="restart_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restart_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="B-Face2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\B-Face2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,6 +193,9 @@
   <data name="exit_normal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit_normal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="shoot_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sound\shoot_sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="sound_on1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sound_on1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -183,6 +204,9 @@
   </data>
   <data name="start_normal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\start_normal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="over_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sound\over_sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="B-Face3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\B-Face3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,6 +223,9 @@
   <data name="start_hover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\start_hover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hp_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sound\hp_sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="upscale-270919632014211" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\upscale-270919632014211.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -208,31 +235,7 @@
   <data name="Left1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Left1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="backtomenu_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backtomenu_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="backtomenu_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backtomenu_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quit_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\quit_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quit_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\quit_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="restart_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\restart_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="restart_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\restart_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="shoot_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\sound\shoot_sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="over_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\sound\over_sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="hp_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\sound\hp_sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="high" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\image\button\high.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
