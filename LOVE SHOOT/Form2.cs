@@ -119,9 +119,29 @@ namespace LOVE_SHOOT
 
                 if (x is PictureBox && (string)x.Tag == "zombie")
                 {
+                    
                     if (player.Bounds.IntersectsWith(x.Bounds))
                     {
-                        playerHealth -= 1;
+                        if (score <= 20)
+                        {
+                            playerHealth -= 1;
+                        }
+                        if(score>= 20 && score <= 40)
+                        {
+                            playerHealth -= 3;
+                        }
+                        if (score >= 40 && score <= 70)
+                        {
+                            playerHealth -= 5;
+                        }
+                        if (score >= 70 && score <= 100)
+                        {
+                            playerHealth -= 10;
+                        }
+                        if (score >= 100)
+                        {
+                            playerHealth -= 15;
+                        }
 
                     }
                     if (x.Left > player.Left)
