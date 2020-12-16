@@ -111,6 +111,8 @@ namespace LOVE_SHOOT
                 {
                     if (player.Bounds.IntersectsWith(x.Bounds))
                     {
+                        System.Media.SoundPlayer sound = new System.Media.SoundPlayer(@"C:\Users\Tang\Desktop\program_fun\LOVE SHOOT\LOVE SHOOT\sound\hp_sound.wav");
+                        sound.Play();
                         this.Controls.Remove(x);
                         ((PictureBox)x).Dispose();
                         ammo += 5;
